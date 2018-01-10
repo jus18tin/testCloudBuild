@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+     >
+    
+    <RelativeLayout 
+        android:id="@+id/smaad_video_view_layout"
+		android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+        android:background="@android:color/background_dark"
+    	android:visibility="visible">
+		<VideoView
+		    android:id="@+id/smaad_video_view"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+	    />
+	</RelativeLayout>
+	
+	<RelativeLayout 
+        android:id="@+id/smaad_video_endcard_layout"
+		android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:visibility="gone">
+    	<WebView
+	        android:id="@+id/smaad_video_endcard"
+	        android:layout_width="match_parent"
+	      	android:layout_height="match_parent"/>
+    </RelativeLayout>
+    
+    <ImageView
+        android:id="@+id/smaad_video_close"
+        android:layout_width="37dp"
+    	android:layout_height="37dp" 
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/smaad_close"
+        android:visibility="visible"
+        />
+    
+    <ImageView
+        android:id="@+id/smaad_video_replay"
+        android:layout_width="37dp"
+    	android:layout_height="37dp" 
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/smaad_replay"
+        android:visibility="gone"
+        />
+</RelativeLayout>
