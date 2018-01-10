@@ -81,21 +81,21 @@
 {
     if (self.maioZoneId) {
         if ([Maio canShowAtZoneId:self.maioZoneId]) {
-            @try {
+//            @try {
                 [Maio showAtZoneId:self.maioZoneId];;
-            }
-            @catch (NSException *exception) {
+//            }
+//            @catch (NSException *exception) {
                 NSLog(@"Maio zone id %@ has exception name[%@] description[%@]", self.maioZoneId, exception.name, exception.description);
-            }
+//            }
         }
     } else {
         if ([Maio canShow]) {
-            @try {
+//            @try {
                 [Maio show];
-            }
-            @catch (NSException *exception) {
+//            }
+//            @catch (NSException *exception) {
                 NSLog(@"Maio has exception name[%@] description[%@]", exception.name, exception.description);
-            }
+//            }
         }
     }
 }
