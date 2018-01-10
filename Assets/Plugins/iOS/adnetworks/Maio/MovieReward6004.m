@@ -85,7 +85,7 @@
                 [Maio showAtZoneId:self.maioZoneId];;
 //            }
 //            @catch (NSException *exception) {
-                NSLog(@"Maio zone id %@ has exception name[%@] description[%@]", self.maioZoneId, exception.name, exception.description);
+//                NSLog(@"Maio zone id %@ has exception name[%@] description[%@]", self.maioZoneId, exception.name, exception.description);
 //            }
         }
     } else {
@@ -94,7 +94,7 @@
                 [Maio show];
 //            }
 //            @catch (NSException *exception) {
-                NSLog(@"Maio has exception name[%@] description[%@]", exception.name, exception.description);
+//                NSLog(@"Maio has exception name[%@] description[%@]", exception.name, exception.description);
 //            }
         }
     }
